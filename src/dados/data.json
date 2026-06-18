@@ -1,20 +1,62 @@
 [
-{
+  {
     "id": 1,
-    "desc": "Adalberto Jr",
-    "imagem": "../../public/",
-    "sal": 13000.00
-},
-{
+    "desc": "Allen Iverson",
+    "imagem": "../../public/iverson.jpg",
+    "sal": 10130000.00
+  },
+  {
     "id": 2,
-    "desc": "Bertoli",
-    "imagem": "../../public/",
-    "sal": 9000.00
-},
-{
+    "desc": "Dikembe Mutombo",
+    "imagem": "../../public/mutombo.jpg",
+    "sal": 14400000.00
+  },
+  {
     "id": 3,
-    "desc": "Bob Esponja",
-    "imagem": "../../public/",
-    "sal": 10000.00
-}
+    "desc": "Aaron McKie",
+    "imagem": "../../public/mckie.jpg",
+    "sal": 5000000.00
+  },
+  {
+    "id": 4,
+    "desc": "Eric Snow",
+    "imagem": "../../public/snow.jpg",
+    "sal": 3375000.00
+  },
+  {
+    "id": 5,
+    "desc": "Tyrone Hill",
+    "imagem": "../../public/hill.jpg",
+    "sal": 6120000.00
+  },
+  {
+    "id": 6,
+    "desc": "George Lynch",
+    "imagem": "../../public/lynch.jpg",
+    "sal": 2700000.00
+  },
+  {
+    "id": 7,
+    "desc": "Jumaine Jones",
+    "imagem": "../../public/jones.jpg",
+    "sal": 820000.00
+  },
+  {
+    "id": 8,
+    "desc": "Matt Geiger",
+    "imagem": "../../public/geiger.jpg",
+    "sal": 7430000.00
+  },
+  {
+    "id": 9,
+    "desc": "Raja Bell",
+    "imagem": "../../public/bell.jpg",
+    "sal": 250000.00
+  },
+  {
+    "id": 10,
+    "desc": "Larry Bird",
+    "imagem": "../../public/bird.jpg",
+    "sal": 250000.00
+  }
 ]

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Login's</title>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
@@ -13,7 +12,31 @@
         <div class="bola">
             <img class="logo" src="../../public/logo.png" alt="Logo">
         </div>
+
+        <div class="wrap-input-label"> 
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Insira seu nome">
+        </div>
+
+        <div class="wrap-input-label"> 
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Insira sua senha">
+            <div onclick="showPassword()">
+                <img src="../../public/visivel.png" alt="Senha" id="eye" class="eye" width="25px">
+            </div>
+        </div>
+
+        <button class="btn-login" onclick="login()">Login</button>
     </div>
-    
+
+
+    <div>
+
+    <div class="error-div" id="error-modal">
+        <h3>Credenciais Incorretas</h3>
+        <button onclick="fecharError()">❌</button>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
