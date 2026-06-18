@@ -1,0 +1,20 @@
+[
+{
+    "id": 1,
+    "desc": "Adalberto Jr",
+    "imagem": "../../public/",
+    "sal": 13000.00
+},
+{
+    "id": 2,
+    "desc": "Bertoli",
+    "imagem": "../../public/",
+    "sal": 9000.00
+},
+{
+    "id": 3,
+    "desc": "Bob Esponja",
+    "imagem": "../../public/",
+    "sal": 10000.00
+}
+]
