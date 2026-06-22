@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif !important;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
