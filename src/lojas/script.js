@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
                                     <div class="card-body">
                                         <h5 class="card-title">${produto.desc}</h5>
                                         <p class="card-text">Time: ${produto.team}</p>
-                                        <p class="card-text">Salário: ${produto.sal}</p>
+                                        <p class="card-text">Preço: $ ${produto.sal}</p>
                                         <a href="#" class="btn btn-primary">
                                         Go somewhere
                                         </a>
