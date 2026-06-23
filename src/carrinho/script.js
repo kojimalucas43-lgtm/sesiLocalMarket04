@@ -8,7 +8,7 @@ $(document).ready(function() {
         let totalPreco = 0
 
         $.each(carrinho, function(index, item){
-            const listItem = $("<li>").text(`${item.desc} - Preço: $${item.preco.toFixed(2)}`)
+            const listItem = $("<li>").text(`${item.desc} - Preço: $${item.sal}`)
 
             const removeButton = $("<button>").text("❌").css("margin-left", "10px").click(function()
             {
@@ -18,9 +18,9 @@ $(document).ready(function() {
             listItem.append(removeButton)
             listElement.append(listItem)
 
-            totalPreco += item.preco
+            totalPreco += parseFloat(item.sal)
         })
-        totalElement.text(`Total $${totalPreco.toFixed(2)}`)
+        totalElement.text(`Total $${totalPreco}`)
     }
 
     function removerItem(index){
@@ -44,7 +44,24 @@ function gerar(){
             </head>
             <body>
                 <h1>PEDIDO CONFIRMADO</h1>
-                <h3></h3>
+                <h3>Agradeceos sua compra e sua preferência.</h3>
+                <br>
+                ${listaHtml}
+                <br>
+                <br>
+                ${totalHtml}
             </body>
+        </html>
     `
+    const blob = new Blob([conteudoHTML], {type: "application/msword"})
+    const link = document.createElement("a")
+
+    link.href = URL.createObjectURL(blob)
+    link.download = "pedido.doc"
+    link.click()
+    document.getElementById("pedido").style.display = "block"
+}
+
+function successClose(){
+    document.getElementById("pedido").style.display = "none"
 }

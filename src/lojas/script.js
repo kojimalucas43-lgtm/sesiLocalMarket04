@@ -29,33 +29,33 @@ document.addEventListener("DOMContentLoaded", function(){
 
         produtos.forEach((produto, index) => {
             const card = document.createElement("div");
-            card.innerHTML = `<div class="card" style="width: 18rem;">
-                                    <img src="${produto.imagem}" class="card-img-top" alt="${produto.desc}">
-                                    <div class="card-body">
-                                        <h5 class="card-title">${produto.desc}</h5>
-                                        <p class="card-text">Time: ${produto.team}</p>
-                                        <p class="card-text">Preço: $ ${produto.sal}</p>
-                                        <a href="#" class="btn btn-primary">
-                                        Go somewhere
-                                        </a>
-                                    </div>
-                                </div>
-                            `
-                            produtosContainer.appendChild(card)
-        })
+            card.innerHTML = `
+                <div class="card" style="width: 18rem;">
+                    <img src="${produto.imagem}" class="card-img-top" alt="${produto.desc}">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome: ${produto.desc}</h5>
+                        <h5 class="card-title">Time: ${produto.team}</h5>
+                        <p class="card-text">Preço: $${produto.sal}</p>
+                        <a href="#" class="btn btn-primary adicionar" data-indice="${index}">
+                            Adicionar ao carrinho
+                        </a>
+                    </div>
+                </div>`
+            produtosContainer.appendChild(card);
+        });
     }).catch((error)=> console.log("Erro ao carregar dados", error)) 
 
-     document.getElementById("produtos-container").addEventListener("click", function(event){
-    const btn = event.target.closest(".adicionar")
-    if(!btn) return
+    document.getElementById("produtos-coteiner").addEventListener("click", function(event){
+        const btn = event.target.closest(".adicionar")
+        if(!btn) return
 
-    const indexDoProduto = btn.dataset.indice
-    const produtoSelecionado = produtos[indexDoProduto]
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
-    carrinho.push(produtoSelecionado)
-    localStorage.setItem("carrinho", JSON.stringify(carrinho))
-    alert("Produto adicionado com sucesso!!!")
-})
+        const indexDoProduto = btn.dataset.indice
+        const produtoSelecionado = produtos[indexDoProduto]
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+        carrinho.push(produtoSelecionado)
+        localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        alert("Produto adicionado com sucesso!!!")
+    })
 })
 
    
