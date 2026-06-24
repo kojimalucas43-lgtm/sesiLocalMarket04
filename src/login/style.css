@@ -17,7 +17,7 @@ body{
 
 .formulario{
     position: relative;
-    background-color: darkblue;
+    background-color: rgb(3, 3, 169);
     width: 300px;
     height: 350px;
     border: 2px solid #ffffff09;
@@ -140,5 +140,10 @@ input:focus{
     background-color: transparent;
     border: none;
     opacity: 0.7;
-    
+    transition: all 200ms ease-in-out;
+}
+
+.error.div button:hover{
+    cursor: pointer;
+    opacity: 1;
 }

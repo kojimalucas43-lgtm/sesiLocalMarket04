@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     <div class="card-body">
                         <h5 class="card-title">Nome: ${produto.desc}</h5>
                         <h5 class="card-title">Time: ${produto.team}</h5>
+                        <p class="card-text">Ano: ${produto.years}</p>
                         <p class="card-text">Preço: $${produto.sal}</p>
                         <a href="#" class="btn btn-primary adicionar" data-indice="${index}">
                             Adicionar ao carrinho
