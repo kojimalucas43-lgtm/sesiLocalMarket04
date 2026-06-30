@@ -9,7 +9,6 @@ body{
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-    padding: 20px;
 }
 .wrap{
     display: flex;
